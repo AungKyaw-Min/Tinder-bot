@@ -1,13 +1,27 @@
-to run:
- - download chromedriver, unzip, move to `/usr/local/bin` (mac os / linux)
- - `pip install selenium`
+Tinder bot
+- download and install python3
+- download and unzip chromedriver
+Install pip,
+https://bootstrap.pypa.io/get-pip.py
+Open cmd, go to the path and write 
+python get-pip.py
+Install virtualenv, using the following command
+py -m pip install --user virtualenv
 
-create a secrets.py file with variables:
-``` 
- username = 'your_username'
- password = 'your_password'
-```
+Create a virtual environment,
+py -m venv env
 
-please add more features to this, would be awesome to see what you can come up w
+Activating a virtual environment
+.\env\Scripts\activate
 
-cheers
+Install selenium 
+pip install selenium
+
+Put the chromedriver.exe inside env/Scripts/
+and also create secrets.py with
+username = ‘’
+password = ‘’
+
+run it with
+python -i tinder_bot.py
+
